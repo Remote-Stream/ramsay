@@ -1,16 +1,16 @@
 @font-face {
-    font-family: IRANSans;
+    font-family: Vazirmatn;
     font-style: normal;
     font-weight: normal;
-    src: url('fa-font/IRANSans.eot');
-    src: url('fa-font/IRANSans?#iefix') format('embedded-opentype'),
-		 url('fa-font/IRANSans.woff2') format('woff2'),
-		 url('fa-font/IRANSans.woff') format('woff'),
-		 url('fa-font/IRANSans.ttf') format('truetype');
+    src: url('fa-font/Vazirmatn.eot');
+    src: url('fa-font/Vazirmatn?#iefix') format('embedded-opentype'),
+		 url('fa-font/Vazirmatn.woff2') format('woff2'),
+		 url('fa-font/Vazirmatn.woff') format('woff'),
+		 url('fa-font/Vazirmatn.ttf') format('truetype');
 }
 
 body,p,h1,h2,h3,h4,h5,h6,rs-module rs-mask-wrap .rs-layer{
-	font-family: IRANSans !important;
+	font-family: Vazirmatn !important;
 }
 
 
