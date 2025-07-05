@@ -1,0 +1,164 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fa-font/IRANSans.eot');
+    src: url('fa-font/IRANSans?#iefix') format('embedded-opentype'),
+		 url('fa-font/IRANSans.woff2') format('woff2'),
+		 url('fa-font/IRANSans.woff') format('woff'),
+		 url('fa-font/IRANSans.ttf') format('truetype');
+}
+
+body,p,h1,h2,h3,h4,h5,h6,rs-module rs-mask-wrap .rs-layer{
+	font-family: IRANSans !important;
+}
+
+
+
+
+
+
+.vlt-navbar .vlt-navbar-contacts {
+    margin-right: 10.41667rem;
+    margin-left: 0;
+}
+.vlt-video-button span {
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+.vlt-footer-socials li {
+    margin-left: 2.66667rem;
+}
+.vlt-aside-menu-wrapper .vlt-aside-menu__navigation .sf-menu li {
+	text-align: right;
+}
+.vlt-aside-menu-wrapper .vlt-aside-menu__socials a {
+    margin-left: 2.66667rem;
+}
+.vlt-aside-menu-wrapper .vlt-aside-menu__copyright p {
+    text-align: right;
+}
+.vlt-aside-menu-wrapper {
+    left: 0;
+    right: auto;
+	    -webkit-transform:    translate3d(-100%,0,0);
+    transform:      translate3d(-100%,0,0);
+}
+.elementor-93 .elementor-element.elementor-element-5660b582 > .elementor-element-populated {
+    padding: 0px 10px 0px 40px;
+}
+.vlt-resume__row h6 {
+    letter-spacing: 0;
+}
+body {
+	text-align: right;
+}
+.vlt-experience-block__title::before {
+    right: 0;
+    left: auto;
+}
+.vlt-experience-block__title {
+    text-align: left;
+}
+@media only screen and (min-width: 768px){
+	.vlt-fullpage-slider .vlt-project-detail {
+    padding-right: 20%;
+}
+}
+	.vlt-fullpage-slider .vlt-project-detail__number {
+    right: 0;
+    left: auto;
+}
+
+.vlt-search-form button {
+    left: 0;
+    right: auto;
+}
+.vlt-search-form input[type=text] {
+    padding-left: 2.5rem;
+	  padding-right: 1rem;
+	}
+.vlt-sidebar--right {
+    padding-right: 2.08333rem;
+	}
+.wp-block-pullquote cite, .wp-block-pullquote footer, .wp-block-pullquote__citation {
+    letter-spacing: 0;
+	}
+	.vlt-comment-item__inner .vlt-comment-avatar {
+    display: block;
+    margin-left: 2.5rem;
+    margin-right: 0;
+	}
+	.vlt-comment-item__inner .vlt-comment-avatar+.vlt-comment-content {
+    padding-right: 1.83333rem;
+}
+.has-line-before::before {
+    left: 100%;
+    right: auto;
+    margin-left: 2rem;
+	margin-right: auto;
+}
+.wpcf7 input[type="text"], .wpcf7 input[type="date"], .wpcf7 input[type="email"], .wpcf7 input[type="password"], .wpcf7 input[type="tel"], .wpcf7 input[type="url"], .wpcf7 input[type="search"], .wpcf7 input[type="number"], .wpcf7 textarea, .wpcf7 select {
+    text-align: right;
+    font-family: inherit !important;
+}
+body #pp-nav.right {
+    left: .41667rem !important;
+	  right: auto !important;
+}
+
+@media only screen and (min-width: 992px){
+	.vlt-right-boxed {
+    padding-left: 4.16667rem;
+}
+}
+.vlt-fullpage-slider .vlt-section__title{
+	 right: 7.91667rem;
+   left: auto;
+}
+.vlt-fullpage-slider .vlt-section__title span {
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+.vlt-experience-block__number {
+    font-family: inherit !important;
+}
+.vlt-footer-socials li+li {
+    margin-right: 2.66667rem;
+    margin-left: 0;
+}
+.vlt-footer-socials li {
+    margin-left: 0;
+}
+.vlt-search-form input[type=text] {
+    font-family: inherit !important;
+}
+.vlt-btn {
+	    font-family: inherit !important;
+}
+.vlt-form-group textarea {
+    font-family: inherit !important;
+}
+.vlt-piling-projects .vlt-project-detail__number {
+    right: 0;
+    left: auto;
+}
+@media only screen and (min-width: 768px){
+.vlt-piling-projects .vlt-project-detail {
+    padding-right: 20%;
+}
+}
+.elementor-86 .elementor-element.elementor-element-30de4753 > .elementor-widget-container {
+    padding: 0% 20% 0% 0% !important;
+}
+.elementor-86 .elementor-element.elementor-element-30de4753 {
+    font-family: inherit !important;
+}
+.elementor-223 .elementor-element.elementor-element-7bccedc {
+	font-family: inherit !important;
+}
+.wpcf7{
+direction: rtl;
+}
+.has-line-before{
+	    color: inherit;
+}
