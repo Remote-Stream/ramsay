@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<meta name="theme-color" content="#58a700">
+	<title>آزمون دولینگو (Duolingo) و مدرک فوری برای مهاجرت - آزمون یار</title>
+	<meta name='robots' content='index, follow' />
+	<meta name="description" content="همه چیز درباره آزمون زبان انگلیسی دولینگو (Duolingo English Test). با خدمات ما مدرک فوری و معتبر دولینگو را برای مهاجرت و پذیرش دانشگاهی کسب کنید.">
+
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- Reusing Styles from your provided code -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+	<link rel='stylesheet' id='bootstrap-css' href='assets/css/framework/bootstrap.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='vlt-main-css-css' href='assets/css/vlt-main.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='ionicons-css' href='assets/fonts/ionicons/ionicons.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="assets/css/rtl.css" type="text/css" media="screen" />
+	<link rel="icon" href="assets/images/cropped-favicon-1-150x150.png" sizes="32x32" />
+	<link rel="icon" href="assets/images/cropped-favicon-1-300x300.png" sizes="192x192" />
+	<link rel="apple-touch-icon" href="assets/images/cropped-favicon-1-300x300.png" />
+	<meta name="msapplication-TileImage" content="assets/images/cropped-favicon-1-300x300.png" />
+
+	<!-- Custom Styles for this Page -->
+	<style>
+		:root {
+			--primary-color: #58a700; /* Duolingo Green */
+			--secondary-color: #89e219;
+			--dark-bg: #1b1b1b;
+			--light-text: #cccccc;
+			--heading-text: #ffffff;
+			--card-bg: #2a2a2a;
+		}
+
+		body {
+			background-color: var(--dark-bg);
+			color: var(--light-text);
+			font-family: 'Vazirmatn', sans-serif;
+		}
+
+		.vlt-main {
+			padding-top: 100px;
+		}
+
+		.page-header {
+			text-align: center;
+			padding: 80px 20px;
+			background: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url('https://placehold.co/1920x600/2a2a2a/cccccc?text=Duolingo+English+Test') no-repeat center center;
+			background-size: cover;
+			border-radius: 15px;
+			margin-bottom: 60px;
+		}
+
+		.page-header h1 {
+			color: var(--heading-text);
+			font-size: 3rem;
+			font-weight: 800;
+		}
+
+		.page-header h1 .highlight {
+			color: var(--primary-color);
+		}
+
+		.page-header p {
+			font-size: 1.2rem;
+			max-width: 800px;
+			margin: 20px auto 30px;
+			color: var(--light-text);
+		}
+
+		.vlt-btn--primary {
+			background-color: var(--primary-color);
+			border: none;
+			padding: 15px 35px;
+			font-size: 1rem;
+			font-weight: 600;
+			border-radius: 50px;
+			transition: all 0.3s ease;
+		}
+
+		.vlt-btn--primary:hover {
+			background-color: var(--secondary-color);
+			color: var(--dark-bg);
+			transform: translateY(-3px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		}
+
+		.section-container {
+			padding: 60px 0;
+		}
+		
+		.section-title {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		.section-title h2 {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: var(--heading-text);
+			position: relative;
+			display: inline-block;
+			padding-bottom: 10px;
+		}
+		
+		.section-title h2::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 50%;
+			transform: translateX(50%);
+			width: 80px;
+			height: 4px;
+			background-color: var(--primary-color);
+			border-radius: 2px;
+		}
+
+		.feature-card {
+			background-color: var(--card-bg);
+			padding: 40px;
+			border-radius: 15px;
+			text-align: center;
+			transition: all 0.3s ease;
+			border: 1px solid #333;
+			height: 100%;
+		}
+
+		.feature-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+			border-color: var(--primary-color);
+		}
+
+		.feature-card .icon {
+			font-size: 3rem;
+			color: var(--primary-color);
+			margin-bottom: 20px;
+		}
+
+		.feature-card h3 {
+			color: var(--heading-text);
+			font-size: 1.5rem;
+			margin-bottom: 15px;
+		}
+		
+		.image-placeholder {
+			width: 100%;
+			height: 350px;
+			background-color: #333;
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			font-size: 1.5rem;
+		}
+
+		.process-step {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 30px;
+		}
+		
+		.process-step .icon {
+			font-size: 2.5rem;
+			color: var(--primary-color);
+			margin-left: 25px;
+			min-width: 50px;
+			text-align: center;
+		}
+
+		.process-step .content h3 {
+			font-size: 1.4rem;
+			color: var(--heading-text);
+			margin-bottom: 10px;
+		}
+
+		.faq-item {
+			background: var(--card-bg);
+			margin-bottom: 15px;
+			border-radius: 10px;
+			border-right: 4px solid var(--primary-color);
+		}
+		
+		.faq-item .faq-question {
+			padding: 20px;
+			font-size: 1.2rem;
+			font-weight: 600;
+			color: var(--heading-text);
+			cursor: pointer;
+			position: relative;
+		}
+
+		.faq-item .faq-question::after {
+			content: '\f078'; /* Font Awesome Chevron Down */
+			font-family: 'Font Awesome 6 Free';
+			font-weight: 900;
+			position: absolute;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: transform 0.3s ease;
+		}
+		
+		.faq-item .faq-answer {
+			padding: 0 20px 20px;
+			display: none;
+			line-height: 1.8;
+		}
+
+		.faq-item.active .faq-question::after {
+			transform: translateY(-50%) rotate(180deg);
+		}
+		.faq-item.active .faq-answer {
+			display: block;
+		}
+		
+		.cta-section {
+			text-align: center;
+			padding: 60px 20px;
+			background-color: var(--card-bg);
+			border-radius: 15px;
+		}
+
+		@media (max-width: 768px) {
+			.page-header h1 {
+				font-size: 2.2rem;
+			}
+			.section-title h2 {
+				font-size: 2rem;
+			}
+			.feature-card {
+				margin-bottom: 30px;
+			}
+		}
+	</style>
+
+</head>
+
+<body class="rtl wp-singular single single-portfolio no-mobile">
+
+	<div class="vlt-site-wrapper">
+		<!-- Header from your template -->
+		<header class="vlt-header">
+			<div class="vlt-navbar vlt-navbar--main vlt-boxed vlt-navbar--transparent vlt-navbar--sticky">
+				<div class="vlt-navbar-background"></div>
+				<div class="vlt-navbar-inner">
+					<div class="vlt-navbar-inner--left">
+						<a href="index.html" class="vlt-navbar-logo">
+							<img src="assets/images/logo.png" alt="آزمون یار">
+						</a>
+						<nav class="vlt-navbar-contacts d-none d-md-block">
+							<ul class="menu">
+								<li><a href="#">+98 21-12345678</a></li>
+								<li><a href="mailto:info@applyexam.com">info@applyexam.com</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="vlt-navbar-inner--right">
+						<div class="d-flex align-items-center">
+							<a href="#" class="vlt-menu-burger">
+								<span class="line line-one"><span></span></span>
+								<span class="line line-two"><span></span></span>
+								<span class="line line-three"><span></span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Mobile Menu (copied for functionality) -->
+		<div class="vlt-aside-menu-overlay"></div>
+		<div class="vlt-aside-menu-wrapper">
+			<div class="vlt-aside-menu">
+				<div class="vlt-aside-menu__header">
+					<a href="#" class="vlt-menu-burger vlt-menu-burger--opened">
+						<span class="line line-one"><span></span></span>
+						<span class="line line-two"><span></span></span>
+						<span class="line line-three"><span></span></span>
+					</a>
+				</div>
+				<nav class="vlt-aside-menu__navigation">
+					<!-- Update this menu as needed -->
+					<ul class="sf-menu">
+						<li><a href="index.html">صفحه اصلی</a></li>
+						<li><a href="toefl.html">آزمون تافل</a></li>
+						<li><a href="duolingo.html">آزمون دولینگو</a></li>
+						<li><a href="#">تماس با ما</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Main Content Starts Here -->
+		<main class="vlt-main">
+			<div class="container">
+
+				<!-- Hero Section -->
+				<header class="page-header">
+					<h1>آزمون دولینگو: <span class="highlight">سریع، مدرن، معتبر</span></h1>
+					<p>آزمون زبان انگلیسی دولینگو، راهکاری نوین و مقرون‌به‌صرفه برای اثبات مهارت زبان شماست. در کمتر از یک ساعت آزمون دهید و نتیجه رسمی خود را ظرف ۴۸ ساعت دریافت کنید.</p>
+					<a href="#contact" class="vlt-btn vlt-btn--primary">مشاوره و ثبت‌نام فوری</a>
+				</header>
+
+				<!-- Why Duolingo Section -->
+				<section class="section-container">
+					<div class="row align-items-center">
+						<div class="col-md-6 mb-4 mb-md-0">
+							<div class="section-title text-right">
+								<h2>چرا آزمون دولینگو؟</h2>
+							</div>
+							<p>آزمون انگلیسی دولینگو (Duolingo English Test) یک آزمون تطبیقی (Adaptive) مبتنی بر هوش مصنوعی است. این یعنی سختی سوالات بر اساس عملکرد شما تغییر می‌کند تا نمره دقیق‌تری از سطح زبان شما ارائه دهد. این آزمون به دلیل مزایای زیر به سرعت در حال کسب محبوبیت جهانی است:</p>
+							<ul>
+								<li><strong>سرعت فوق‌العاده:</strong> دریافت نتیجه رسمی تنها در ۴۸ ساعت.</li>
+								<li><strong>مقرون‌به‌صرفه:</strong> هزینه‌ای بسیار کمتر از آزمون‌های تافل و آیلتس.</li>
+								<li><strong>راحتی و دسترسی:</strong> امکان شرکت در آزمون از هر کجا و در هر زمان.</li>
+								<li><strong>اعتبار جهانی:</strong> مورد پذیرش بیش از ۴۰۰۰ دانشگاه و موسسه در سراسر جهان.</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<div class="image-placeholder">
+								<i class="fas fa-rocket fa-3x"></i>   Fast & Modern English Test
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- Exam Question Types Section -->
+				<section class="section-container">
+					<div class="section-title">
+						<h2>انواع سوالات در آزمون دولینگو</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="feature-card">
+								<div class="icon"><i class="fas fa-file-alt"></i></div>
+								<h3>خواندن و نوشتن</h3>
+								<p>شامل تکمیل کلمات، خواندن و نوشتن، توصیف تصویر و پاسخ کتبی به سوالات.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature-card">
+								<div class="icon"><i class="fas fa-volume-up"></i></div>
+								<h3>شنیدن و صحبت کردن</h3>
+								<p>شامل گوش دادن و تایپ کردن، خواندن و صحبت کردن و پاسخ شفاهی به سوالات.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature-card">
+								<div class="icon"><i class="fas fa-random"></i></div>
+								<h3>مهارت‌های ترکیبی</h3>
+								<p>سوالات نوآورانه‌ای که چندین مهارت را همزمان می‌سنجند، مانند "Read, then Speak".</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature-card">
+								<div class="icon"><i class="fas fa-video"></i></div>
+								<h3>مصاحبه و نمونه نوشتار</h3>
+								<p>یک مصاحبه ویدیویی و یک نمونه نوشتاری که همراه با کارنامه برای دانشگاه‌ها ارسال می‌شود.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Our Process Section -->
+				<section class="section-container">
+					<div class="section-title">
+						<h2>مسیر سبز موفقیت با ما</h2>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<div class="image-placeholder">
+								<i class="fas fa-tasks fa-3x"></i>   Your Path to Success
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="process-step">
+								<div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+								<div class="content">
+									<h3>۱. مشاوره و تعیین سطح</h3>
+									<p>نیازهای شما را می‌سنجیم و بررسی می‌کنیم که آیا آزمون دولینگو برای دانشگاه مقصد شما مناسب است یا خیر.</p>
+								</div>
+							</div>
+							<div class="process-step">
+								<div class="icon"><i class="fas fa-mouse-pointer"></i></div>
+								<div class="content">
+									<h3>۲. ثبت‌نام و ایجاد حساب</h3>
+									<p>تمامی مراحل ثبت‌نام در آزمون دولینگو را برای شما انجام داده و شما را با محیط آزمون آشنا می‌کنیم.</p>
+								</div>
+							</div>
+							<div class="process-step">
+								<div class="icon"><i class="fas fa-lightbulb"></i></div>
+								<div class="content">
+									<h3>۳. آمادگی با منابع هوشمند</h3>
+									<p>با نمونه سوالات واقعی و نکات کلیدی، شما را برای انواع سوالات تطبیقی آزمون آماده می‌کنیم.</p>
+								</div>
+							</div>
+							<div class="process-step">
+								<div class="icon"><i class="fas fa-paper-plane"></i></div>
+								<div class="content">
+									<h3>۴. کسب مدرک در ۴۸ ساعت</h3>
+									<p>پس از موفقیت در آزمون، مدرک شما در کمتر از دو روز صادر شده و ما آن را برای دانشگاه‌های مورد نظرتان ارسال می‌کنیم.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- FAQ Section -->
+				<section class="section-container">
+					<div class="section-title">
+						<h2>سوالات متداول</h2>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div id="faq-accordion">
+								<div class="faq-item">
+									<div class="faq-question">آیا مدرک دولینگو توسط همه دانشگاه‌ها پذیرفته می‌شود؟</div>
+									<div class="faq-answer">
+										<p>مدرک دولینگو توسط هزاران دانشگاه در سراسر جهان از جمله دانشگاه‌های برتر در آمریکا، کانادا، اروپا و استرالیا پذیرفته می‌شود. با این حال، همیشه توصیه می‌شود که نیازمندی‌های زبان دانشگاه مقصد خود را مستقیماً از وب‌سایت آن‌ها بررسی کنید. کارشناسان ما نیز در این زمینه به شما مشاوره خواهند داد.</p>
+									</div>
+								</div>
+								<div class="faq-item">
+									<div class="faq-question">نمره‌دهی آزمون دولینگو چگونه است؟</div>
+									<div class="faq-answer">
+										<p>نمره‌دهی آزمون دولینگو در مقیاس ۱۰ تا ۱۶۰ انجام می‌شود. این نمرات با آزمون‌های دیگر مانند تافل و آیلتس قابل مقایسه هستند. برای مثال، نمره ۱۲۰ در دولینگو تقریباً معادل نمره ۱۰۰ در تافل iBT یا نمره ۷ در آیلتس است.</p>
+									</div>
+								</div>
+								<div class="faq-item">
+									<div class="faq-question">مدت زمان آزمون دولینگو چقدر است؟</div>
+									<div class="faq-answer">
+										<p>کل آزمون حدود یک ساعت طول می‌کشد که شامل بخش راه‌اندازی سریع (۵ دقیقه)، آزمون تطبیقی (۴۵ دقیقه) و بخش مصاحبه و نمونه نوشتار (۱۰ دقیقه) است. این زمان کوتاه یکی از بزرگترین مزیت‌های این آزمون است.</p>
+									</div>
+								</div>
+								<div class="faq-item">
+									<div class="faq-question">تفاوت اصلی دولینگو با آیلتس و تافل چیست؟</div>
+									<div class="faq-answer">
+										<p>تفاوت‌های اصلی عبارتند از: <strong>۱. سرعت:</strong> نتیجه در ۲ روز به جای چند هفته. <strong>۲. هزینه:</strong> بسیار ارزان‌تر. <strong>۳. زمان:</strong> یک ساعت به جای سه ساعت. <strong>۴. ماهیت:</strong> تطبیقی (سختی سوالات بر اساس عملکرد شما تغییر می‌کند).</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Final CTA Section -->
+				<section id="contact" class="section-container">
+					<div class="cta-section">
+						<div class="section-title">
+							<h2>سریع‌ترین مسیر مهاجرت را انتخاب کنید!</h2>
+						</div>
+						<p class="lead text-white" style="max-width: 700px; margin: 0 auto 30px;">اگر برای ارسال مدارک خود عجله دارید و به دنبال یک راهکار سریع و معتبر هستید، دولینگو بهترین انتخاب است. همین حالا برای مشاوره رایگان با ما تماس بگیرید.</p>
+						<a href="#" class="vlt-btn vlt-btn--primary">دریافت مشاوره تخصصی دولینگو</a>
+					</div>
+				</section>
+
+			</div>
+		</main>
+		<!-- Main Content Ends Here -->
+
+		<!-- Footer from your template -->
+		<footer class="vlt-footer vlt-boxed vlt-footer--fixed">
+			<div class="vlt-footer-copyright">
+				<p>© 1403 آزمون‌یار. تمامی حقوق محفوظ است.</p>
+			</div>
+			<ul class="vlt-footer-socials">
+				<li><a href="#" target="_blank"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#" target="_blank"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#" target="_blank"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+				<li><a href="#" target="_blank"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</footer>
+	</div>
+
+	<!-- Scripts from your template -->
+	<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/superclick.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/vlt-controllers.min.js"></script>
+
+	<!-- Custom Script for FAQ Accordion -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const faqItems = document.querySelectorAll('.faq-item .faq-question');
+			faqItems.forEach(item => {
+				item.addEventListener('click', function () {
+					const parent = this.parentElement;
+					// Optional: close other open items
+					document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+						if (activeItem !== parent) {
+							activeItem.classList.remove('active');
+						}
+					});
+					parent.classList.toggle('active');
+				});
+			});
+			
+			// Script for mobile menu burger
+			const burger = document.querySelector('.vlt-menu-burger');
+			const menuWrapper = document.querySelector('.vlt-aside-menu-wrapper');
+			const menuOverlay = document.querySelector('.vlt-aside-menu-overlay');
+
+			if (burger && menuWrapper && menuOverlay) {
+				burger.addEventListener('click', function(e) {
+					e.preventDefault();
+					document.body.classList.toggle('vlt-aside-menu-opened');
+				});
+				menuOverlay.addEventListener('click', function(e) {
+					e.preventDefault();
+					document.body.classList.remove('vlt-aside-menu-opened');
+				});
+			}
+		});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<meta name="theme-color" content="#c32865">
+	<title>آزمون تافل iBT و مدرک فوری برای مهاجرت - آزمون یار</title>
+	<meta name='robots' content='index, follow' />
+	<meta name="description" content="راهنمای کامل آزمون تافل iBT و نسخه Home Edition. با خدمات ما مدرک تافل فوری و تضمینی برای مهاجرت تحصیلی و کاری خود دریافت کنید.">
+
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<!-- Reusing Styles from your provided code -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+	<link rel='stylesheet' id='bootstrap-css' href='assets/css/framework/bootstrap.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='vlt-main-css-css' href='assets/css/vlt-main.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='ionicons-css' href='assets/fonts/ionicons/ionicons.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="assets/css/rtl.css" type="text/css" media="screen" />
+
+	<!-- Custom Styles for this Page -->
+	<style>
+		:root {
+			--primary-color: #0693e3; /* A professional blue color */
+			--secondary-color: #2fe0bf;
+			--dark-bg: #1b1b1b;
+			--light-text: #cccccc;
+			--heading-text: #ffffff;
+			--card-bg: #2a2a2a;
+		}
+
+		body {
+			background-color: var(--dark-bg);
+			color: var(--light-text);
+			font-family: 'Vazirmatn', sans-serif;
+		}
+
+		.vlt-main {
+			padding-top: 100px;
+		}
+
+		.page-header {
+			text-align: center;
+			padding: 80px 20px;
+			background: linear-gradient(rgba(27, 27, 27, 0.8), rgba(27, 27, 27, 0.8)), url('https://placehold.co/1920x600/2a2a2a/cccccc?text=TOEFL+Exam') no-repeat center center;
+			background-size: cover;
+			border-radius: 15px;
+			margin-bottom: 60px;
+		}
+
+		.page-header h1 {
+			color: var(--heading-text);
+			font-size: 3rem;
+			font-weight: 800;
+		}
+
+		.page-header h1 .highlight {
+			color: var(--primary-color);
+		}
+
+		.page-header p {
+			font-size: 1.2rem;
+			max-width: 800px;
+			margin: 20px auto 30px;
+			color: var(--light-text);
+		}
+
+		.vlt-btn--primary {
+			background-color: var(--primary-color);
+			border: none;
+			padding: 15px 35px;
+			font-size: 1rem;
+			font-weight: 600;
+			border-radius: 50px;
+			transition: all 0.3s ease;
+		}
+
+		.vlt-btn--primary:hover {
+			background-color: var(--secondary-color);
+			color: var(--dark-bg);
+			transform: translateY(-3px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		}
+
+		.section-container {
+			padding: 60px 0;
+		}
+		
+		.section-title {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		.section-title h2 {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: var(--heading-text);
+			position: relative;
+			display: inline-block;
+			padding-bottom: 10px;
+		}
+		
+		.section-title h2::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 50%;
+			transform: translateX(50%);
+			width: 80px;
+			height: 4px;
+			background-color: var(--primary-color);
+			border-radius: 2px;
+		}
+
+		.feature-card {
+			background-color: var(--card-bg);
+			padding: 40px;
+			border-radius: 15px;
+			text-align: center;
+			transition: all 0.3s ease;
+			border: 1px solid #333;
+			height: 100%;
+		}
+
+		.feature-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+			border-color: var(--primary-color);
+		}
+
+		.feature-card .icon {
+			font-size: 3rem;
+			color: var(--primary-color);
+			margin-bottom: 20px;
+		}
+
+		.feature-card h3 {
+			color: var(--heading-text);
+			font-size: 1.5rem;
+			margin-bottom: 15px;
+		}
+		
+		.image-placeholder {
+			width: 100%;
+			height: 350px;
+			background-color: #333;
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #777;
+			font-size: 1.5rem;
+		}
+
+		.process-step {
+			display: flex;
+			align-items: flex-start;
+			margin-bottom: 30px;
+		}
+		
+		.process-step .icon {
+			font-size: 2.5rem;
+			color: var(--primary-color);
+			margin-left: 25px;
+			min-width: 50px;
+			text-align: center;
+		}
+
+		.process-step .content h3 {
+			font-size: 1.4rem;
+			color: var(--heading-text);
+			margin-bottom: 10px;
+		}
+
+		.faq-item {
+			background: var(--card-bg);
+			margin-bottom: 15px;
+			border-radius: 10px;
+			border-right: 4px solid var(--primary-color);
+		}
+		
+		.faq-item .faq-question {
+			padding: 20px;
+			font-size: 1.2rem;
+			font-weight: 600;
+			color: var(--heading-text);
+			cursor: pointer;
+			position: relative;
+		}
+
+		.faq-item .faq-question::after {
+			content: '\f078'; /* Font Awesome Chevron Down */
+			font-family: 'Font Awesome 6 Free';
+			font-weight: 900;
+			position: absolute;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+			transition: transform 0.3s ease;
+		}
+		
+		.faq-item .faq-answer {
+			padding: 0 20px 20px;
+			display: none;
+			line-height: 1.8;
+		}
+
+		/* Simple accordion toggle for FAQ */
+		.faq-item.active .faq-question::after {
+			transform: translateY(-50%) rotate(180deg);
+		}
+		.faq-item.active .faq-answer {
+			display: block;
+		}
+		
+		.cta-section {
+			text-align: center;
+			padding: 60px 20px;
+			background-color: var(--card-bg);
+			border-radius: 15px;
+		}
+
+		@media (max-width: 768px) {
+			.page-header h1 {
+				font-size: 2.2rem;
+			}
+			.section-title h2 {
+				font-size: 2rem;
+			}
+			.feature-card {
+				margin-bottom: 30px;
+			}
+		}
+	</style>
+
+</head>
+
+<body class="rtl wp-singular single single-portfolio no-mobile">
+
+	<div class="vlt-site-wrapper">
+		<!-- Header from your template -->
+		<header class="vlt-header">
+			<div class="vlt-navbar vlt-navbar--main vlt-boxed vlt-navbar--transparent vlt-navbar--sticky">
+				<div class="vlt-navbar-background"></div>
+				<div class="vlt-navbar-inner">
+					<div class="vlt-navbar-inner--left">
+						<a href="index.html" class="vlt-navbar-logo">
+							<img src="assets/images/logo.png" alt="آزمون یار">
+						</a>
+						<nav class="vlt-navbar-contacts d-none d-md-block">
+							<ul class="menu">
+								<li><a href="#">+98 21-12345678</a></li>
+								<li><a href="mailto:info@applyexam.com">info@applyexam.com</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="vlt-navbar-inner--right">
+						<div class="d-flex align-items-center">
+							<a href="#" class="vlt-menu-burger">
+								<span class="line line-one"><span></span></span>
+								<span class="line line-two"><span></span></span>
+								<span class="line line-three"><span></span></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Mobile Menu (copied for functionality) -->
+		<div class="vlt-aside-menu-overlay"></div>
+		<div class="vlt-aside-menu-wrapper">
+			<div class="vlt-aside-menu">
+				<div class="vlt-aside-menu__header">
+					<a href="#" class="vlt-menu-burger vlt-menu-burger--opened">
+						<span class="line line-one"><span></span></span>
+						<span class="line line-two"><span></span></span>
+						<span class="line line-three"><span></span></span>
+					</a>
+				</div>
+				<nav class="vlt-aside-menu__navigation">
+					<!-- Update this menu as needed -->
+					<ul class="sf-menu">
+						<li><a href="index.html">صفحه اصلی</a></li>
+						<li><a href="toefl.html">آزمون تافل</a></li>
+						<li><a href="#">آزمون دولینگو</a></li>
+						<li><a href="#">تماس با ما</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Main Content Starts Here -->
+		<main class="vlt-main">
+			<div class="container">
+
+				<!-- Hero Section -->
+				<header class="page-header">
+					<h1>آزمون تافل <span class="highlight">iBT</span> و مدرک فوری</h1>
+					<p>مسیر مهاجرت تحصیلی و کاری خود را با دریافت مدرک معتبر تافل iBT در سریع‌ترین زمان ممکن هموار کنید. ما در تمام مراحل، از آمادگی تا کسب نمره دلخواه، در کنار شما هستیم.</p>
+					<a href="#contact" class="vlt-btn vlt-btn--primary">شروع مشاوره رایگان</a>
+				</header>
+
+				<!-- What is TOEFL Section -->
+				<section class="section-container">
+					<div class="row align-items-center">
+						<div class="col-md-6 mb-4 mb-md-0">
+							<div class="section-title text-right">
+								<h2>آزمون تافل iBT چیست؟</h2>
+							</div>
+							<p>آزمون تافل (Test of English as a Foreign Language) یکی از معتبرترین و شناخته‌شده‌ترین آزمون‌های زبان انگلیسی در سراسر جهان است که مهارت‌های چهارگانه شما را در یک محیط آکادمیک می‌سنجد. مدرک این آزمون توسط بیش از ۱۱,۰۰۰ دانشگاه و موسسه در بیش از ۱۵۰ کشور جهان پذیرفته می‌شود.</p>
+							<p>نسخه <strong style="color: var(--primary-color);">TOEFL iBT Home Edition</strong> به شما این امکان را می‌دهد که آزمون را به صورت آنلاین و در منزل خود برگزار کنید و نتیجه آن را با همان اعتبار آزمون حضوری، اما بسیار سریع‌تر، برای دانشگاه‌ها ارسال نمایید.</p>
+						</div>
+						<div class="col-md-6">
+							<div class="image-placeholder">
+								<i class="fas fa-globe-americas fa-3x"></i>   TOEFL iBT for Global Opportunities
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- Exam Structure Section -->
+				<section class="section-container">
+					<div class="section-title">
+						<h2>ساختار آزمون تافل iBT</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="feature-card">
+								<div class="icon"><i class="fas fa-book-open"></i></div>
+								<h3>Reading (خواندن)</h3>
+								<p>سنجش درک مطلب شما از متون آکادمیک و توانایی پاسخ به سوالات مرتبط با آن‌ها.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature-card">
+								<div class="icon"><i class="fas fa-headphones-alt"></i></div>
+								<h3>Listening (شنیداری)</h3>
+								<p>سنجش توانایی درک مکالمات و سخنرانی‌های دانشگاهی به زبان انگلیسی.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature-card">
+								<div class="icon"><i class="fas fa-microphone-alt"></i></div>
+								<h3>Speaking (گفتاری)</h3>
+								<p>ارزیابی توانایی شما در بیان نظرات و پاسخ به سوالات به صورت شفاهی.</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="feature-card">
+								<div class="icon"><i class="fas fa-keyboard"></i></div>
+								<h3>Writing (نوشتاری)</h3>
+								<p>سنجش مهارت شما در نوشتن متون تحلیلی و ترکیبی بر اساس مطالب خوانده و شنیده شده.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Our Process Section -->
+				<section class="section-container">
+					<div class="section-title">
+						<h2>فرآیند ما برای موفقیت شما</h2>
+					</div>
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<div class="image-placeholder">
+								<i class="fas fa-tasks fa-3x"></i>   Step-by-Step Success Plan
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="process-step">
+								<div class="icon"><i class="fas fa-comments"></i></div>
+								<div class="content">
+									<h3>۱. مشاوره تخصصی و رایگان</h3>
+									<p>نیازهای شما و دانشگاه مقصد را بررسی کرده و بهترین استراتژی را برای کسب نمره مورد نظر تعیین می‌کنیم.</p>
+								</div>
+							</div>
+							<div class="process-step">
+								<div class="icon"><i class="fas fa-calendar-alt"></i></div>
+								<div class="content">
+									<h3>۲. ثبت‌نام و برنامه‌ریزی</h3>
+									<p>فرآیند ثبت‌نام در آزمون TOEFL Home Edition را برای شما انجام داده و یک برنامه مطالعاتی شخصی‌سازی شده ارائه می‌دهیم.</p>
+								</div>
+							</div>
+							<div class="process-step">
+								<div class="icon"><i class="fas fa-clipboard-check"></i></div>
+								<div class="content">
+									<h3>۳. آمادگی و آزمون آزمایشی</h3>
+									<p>با منابع اختصاصی و شرکت در آزمون‌های شبیه‌سازی شده، شما را برای روز آزمون اصلی کاملاً آماده می‌کنیم.</p>
+								</div>
+							</div>
+							<div class="process-step">
+								<div class="icon"><i class="fas fa-graduation-cap"></i></div>
+								<div class="content">
+									<h3>۴. کسب مدرک و ارسال به دانشگاه</h3>
+									<p>پس از موفقیت در آزمون، مدرک شما در سریع‌ترین زمان صادر و مستقیماً برای دانشگاه‌های مورد نظرتان ارسال می‌شود.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<!-- FAQ Section -->
+				<section class="section-container">
+					<div class="section-title">
+						<h2>سوالات متداول</h2>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div id="faq-accordion">
+								<div class="faq-item">
+									<div class="faq-question">آیا مدرک تافل Home Edition به اندازه آزمون حضوری معتبر است؟</div>
+									<div class="faq-answer">
+										<p>بله، مدرک تافل iBT Home Edition توسط سازمان ETS برگزار می‌شود و از نظر اعتبار، محتوا و ساختار کاملاً مشابه آزمون حضوری است. هزاران دانشگاه در سراسر جهان این مدرک را برای پذیرش دانشجو قبول می‌کنند.</p>
+									</div>
+								</div>
+								<div class="faq-item">
+									<div class="faq-question">نتیجه آزمون چقدر طول می‌کشد تا آماده شود؟</div>
+									<div class="faq-answer">
+										<p>یکی از بزرگترین مزایای تافل آنلاین، سرعت بالای اعلام نتایج است. معمولاً نتیجه آزمون شما بین ۴ تا ۸ روز کاری پس از برگزاری آزمون آماده و در حساب کاربری شما قابل مشاهده خواهد بود.</p>
+									</div>
+								</div>
+								<div class="faq-item">
+									<div class="faq-question">آیا برای شرکت در آزمون آنلاین به تجهیزات خاصی نیاز دارم؟</div>
+									<div class="faq-answer">
+										<p>شما به یک کامپیوتر یا لپ‌تاپ (نه تبلت یا موبایل)، وب‌کم، میکروفون، اسپیکر (نه هدفون) و اینترنت پایدار نیاز دارید. همچنین باید مرورگر مخصوص آزمون ETS را نصب کنید.</p>
+									</div>
+								</div>
+								<div class="faq-item">
+									<div class="faq-question">هزینه خدمات شما چقدر است؟</div>
+									<div class="faq-answer">
+										<p>هزینه خدمات بسته به پکیج انتخابی شما (شامل مشاوره، ثبت‌نام، منابع آموزشی، کلاس‌های خصوصی و...) متفاوت است. برای دریافت اطلاعات دقیق و مشاوره رایگان، لطفاً با ما تماس بگیرید.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Final CTA Section -->
+				<section id="contact" class="section-container">
+					<div class="cta-section">
+						<div class="section-title">
+							<h2>همین امروز برای آینده خود اقدام کنید!</h2>
+						</div>
+						<p class="lead text-white" style="max-width: 700px; margin: 0 auto 30px;">تیم ما آماده است تا شما را در مسیر پرچالش مهاجرت همراهی کند. برای دریافت مشاوره تخصصی و رایگان، فرم زیر را تکمیل کنید یا با ما تماس بگیرید.</p>
+						<a href="#" class="vlt-btn vlt-btn--primary">ثبت‌نام و مشاوره رایگان</a>
+					</div>
+				</section>
+
+			</div>
+		</main>
+		<!-- Main Content Ends Here -->
+
+		<!-- Footer from your template -->
+		<footer class="vlt-footer vlt-boxed vlt-footer--fixed">
+			<div class="vlt-footer-copyright">
+				<p>© 1403 آزمون‌یار. تمامی حقوق محفوظ است.</p>
+			</div>
+			<ul class="vlt-footer-socials">
+				<li><a href="#" target="_blank"><i class="ion-social-twitter"></i></a></li>
+				<li><a href="#" target="_blank"><i class="ion-social-facebook"></i></a></li>
+				<li><a href="#" target="_blank"><i class="ion-social-googleplus"></i></a></li>
+				<li><a href="#" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+				<li><a href="#" target="_blank"><i class="ion-social-dribbble"></i></a></li>
+			</ul>
+		</footer>
+	</div>
+
+	<!-- Scripts from your template -->
+	<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="assets/vendors/superclick.min.js"></script>
+	<script type="text/javascript" src="assets/scripts/vlt-controllers.min.js"></script>
+
+	<!-- Custom Script for FAQ Accordion -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const faqItems = document.querySelectorAll('.faq-item .faq-question');
+			faqItems.forEach(item => {
+				item.addEventListener('click', function () {
+					const parent = this.parentElement;
+					// Optional: close other open items
+					document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+						if (activeItem !== parent) {
+							activeItem.classList.remove('active');
+						}
+					});
+					parent.classList.toggle('active');
+				});
+			});
+			
+			// Script for mobile menu burger
+			const burger = document.querySelector('.vlt-menu-burger');
+			const menuWrapper = document.querySelector('.vlt-aside-menu-wrapper');
+			const menuOverlay = document.querySelector('.vlt-aside-menu-overlay');
+
+			if (burger && menuWrapper && menuOverlay) {
+				burger.addEventListener('click', function(e) {
+					e.preventDefault();
+					document.body.classList.toggle('vlt-aside-menu-opened');
+				});
+				menuOverlay.addEventListener('click', function(e) {
+					e.preventDefault();
+					document.body.classList.remove('vlt-aside-menu-opened');
+				});
+			}
+		});
+	</script>
+
+</body>
+
+</html>
