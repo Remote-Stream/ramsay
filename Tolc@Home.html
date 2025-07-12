@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راهنمای جامع آزمون TOLC@Home 2025 | نحوه اجرا و نکات آمادگی</title>
+    <meta name="description" content="راهنمای کامل آزمون TOLC@Home 2025 شامل نحوه اجرا در VMware Horizon، تغییرات جدید، الزامات فنی، نکات آمادگی و سوالات متداول برای موفقیت در آزمون. شروع کنید!" />
+    <meta name="keywords" content="آزمون TOLC, TOLC@Home, VMware Horizon, راهنمای TOLC 2025, نکات آزمون TOLC, نمونه سوالات TOLC, آمادگی آزمون TOLC, تولک آنلاین, آزمون آنلاین ایتالیا" />
+    <meta property="og:title" content="راهنمای جامع آزمون TOLC@Home 2025" />
+    <meta property="og:description" content="همه چیز درباره آزمون TOLC@Home، نحوه اجرا در VMware Horizon، آپدیت‌های 2025، و نکات ضروری برای موفقیت." />
+    <meta property="og:image" content="https://www.cisiaonline.it/wp-content/uploads/2023/01/tolc-home.jpg" />
+    <meta property="og:url" content="https://www.cisiaonline.it/tolc-guide-2025" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:site_name" content="CISIA - TOLC@Home" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:image" content="https://www.cisiaonline.it/wp-content/uploads/2023/01/tolc-home.jpg" />
+    <meta name="twitter:title" content="راهنمای جامع آزمون TOLC@Home 2025" />
+    <meta name="twitter:description" content="راهنمای کامل برای موفقیت در آزمون TOLC@Home 2025 با جزئیات VMware Horizon و نکات آمادگی." />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="canonical" href="https://www.cisiaonline.it/tolc-guide-2025" />
+    <link rel="icon" href="https://www.cisiaonline.it/favicon.ico" type="image/x-icon" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="content-language" content="fa" />
+    <meta name="author" content="xAI - Grok 3" />
+    <meta name="date" content="2025-07-09" />
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1d4ed8;
+            --accent-color: #60a5fa;
+            --dark-color: #1e273b;
+            --light-color: #f8fafc;
+            --white-color: #ffffff;
+            --text-color: #1f2a44;
+            --titel-color: #ffffff;
+            --border-color: #e2e8f0;
+            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --error-color: #ef4444;
+        }
+
+        [data-theme="dark"] {
+            --white-color: #2d3738;
+            --light-color: #ffffff;
+            --text-color: #d1d5eb;
+            --border-color: #6b7280;
+            --dark-color: #3bd1f6;
+            --accent-color: #93c5fd;
+            --titel-color: #7be0ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            line-height: 1.8;
+            background-color: var(--white-color);
+            color: var(--text-color);
+            direction: var(--primary-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* کادرهای تیتر اصلی */
+        .section-title {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--titel-color);
+            padding: 0.75rem 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+            font-weight: 700;
+            font-size: 2.2rem;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-title::before {
+            content: '\f0d7';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            bottom: -1rem;
+            right: 50%;
+            transform: translateX(50%);
+            color: var(--text-color);
+            font-size: 1.2rem;
+            opacity: 0.3;
+        }
+
+        .section-title:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* نوار ناوبری */
+        .navbar {
+            background: var(--white-color);
+            padding: 1rem 0;
+            position: sticky;
+            margin-top: 32px;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            font-size: 1.6rem;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links .theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links .theme-toggle:hover {
+            color: var(--primary-color);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        .mobile-nav {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            background: var(--white-color);
+            box-shadow: var(--shadow-light);
+            padding: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav.active {
+            display: flex;
+        }
+
+        .mobile-nav li {
+            margin: 0.8rem 0;
+        }
+
+        .mobile-nav .theme-toggle {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: var(--text-color);
+            transition: color 0.3s ease;
+            padding: 0.5rem 0;
+            text-align: right;
+        }
+
+        .mobile-nav .theme-toggle:hover {
+            color: var(--primary-color);
+        }
+
+        /* غیرفعال کردن منوی همبرگری در موبایل */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: none !important;
+            }
+            .mobile-nav {
+                display: none !important;
+            }
+            .nav-links {
+                display: flex !important;
+                flex-direction: row;
+                width: 100%;
+                justify-content: flex-end;
+            }
+            .nav-links a, .nav-links .theme-toggle {
+                margin-left: 1rem;
+            }
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(29, 78, 216, 0.1) 100%);
+            padding: 8rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="%232563eb" stroke-width="0.5" /></svg>');
+            opacity: 0.1;
+            animation: rotate 60s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+            line-height: 1.3;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        /* دکمه‌ها */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.8rem 2rem;
+            background: var(--primary-color);
+            color: var(--light-color);
+            text-decoration: none;
+            border-radius: 1.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn i {
+            font-size: 1.1rem;
+        }
+
+        /* کارت‌های اطلاعات */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+
+        .info-card {
+            background: var(--white-color);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-light);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .info-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .info-card h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .info-card h3::before {
+            content: '\f05b';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-left: 0.5rem;
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        .info-card p {
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding-right: 1.2rem;
+        }
+
+        .info-card li {
+            margin-bottom: 0.6rem;
+            position: relative;
+            padding-right: 1.2rem;
+        }
+
+        .info-card li::before {
+            content: '✔';
+            position: absolute;
+            right: 0;
+            color: var(--success-color);
+            font-size: 1rem;
+        }
+
+        /* نکات مهم */
+        .important-notes {
+            background: var(--primary-color);
+            padding: 5rem 0;
+        }
+
+        .note-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .note-card {
+            background: var(--white-color);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-light);
+            border-right: 4px solid var(--primary-color);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+        }
+
+        .note-card:hover {
+            transform: translateX(-8px) scale(1.02);
+        }
+
+        .note-card h4 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .note-card h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--secondary-color);
+            border-radius: 2px;
+        }
+
+        .note-card h4::before {
+            content: '\f058';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-left: 0.5rem;
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        .note-card ul, .note-card ol {
+            padding-right: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        .note-card li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* ساختار آزمون */
+        .exam-structure {
+            padding: 5rem 0;
+        }
+
+        .exam-structure .section-title {
+            text-align: center;
+        }
+
+        /* پرسش‌های متداول */
+        .faq {
+            background: var(--light-color);
+            padding: 5rem 0;
+        }
+
+        .faq .section-title {
+            text-align: center;
+        }
+
+        .faq-item {
+            background: var(--white-color);
+            padding: 1.5rem;
+            border-radius: 0.8rem;
+            box-shadow: var(--shadow-light);
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item.active {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .faq-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .faq-item h4::after {
+            content: '\f078';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active h4::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-item h4::before {
+            content: '\f059';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            margin-left: 0.5rem;
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        .faq-item .answer {
+            display: none;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .faq-item.active .answer {
+            display: block;
+        }
+
+        /* دکمه بازگشت به بالا */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: var(--primary-color);
+            color: var(--white-color);
+            padding: 0.8rem 1rem;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: none;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+        .back-to-top.visible {
+            display: block;
+        }
+
+        /* نوار پیشرفت */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background: var(--primary-color);
+            z-index: 2000;
+            transition: width 0.3s ease;
+        }
+
+        /* فوتر */
+        .footer {
+            background: var(--dark-color);
+            color: var(--white-color);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: var(--white-color);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* رسپانسیو */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .info-cards, .note-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+                padding: 0.5rem 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .btn {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar"></div>
+    <nav class="navbar" role="navigation" aria-label="نوار ناوبری اصلی">
+        <div class="container nav-content">
+            <a href="#" class="logo" aria-label="لوگوی TOLC@Home">
+                <i class="fas fa-graduation-cap"></i>
+                TOLC@Home
+            </a>
+            <div class="nav-actions">
+                <div class="hamburger" aria-label="منوی موبایل">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">درباره آزمون</a></li>
+                <li><a href="#structure">ساختار آزمون</a></li>
+                <li><a href="#vmware">اجرا در VMware</a></li>
+                <li><a href="#updates">آپدیت‌های 2025</a></li>
+                <li><a href="#tips">نکات آمادگی</a></li>
+                <li><a href="#faq">سوالات متداول</a></li>
+                <li><button class="theme-toggle" aria-label="تغییر تم"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <ul class="nav-links mobile-nav">
+                <li><a href="#about">درباره آزمون</a></li>
+                <li><a href="#structure">ساختار آزمون</a></li>
+                <li><a href="#vmware">اجرا در VMware</a></li>
+                <li><a href="#updates">آپدیت‌های 2025</a></li>
+                <li><a href="#tips">نکات آمادگی</a></li>
+                <li><a href="#faq">سوالات متداول</a></li>
+                <li><button class="theme-toggle" aria-label="تغییر تم"><i class="fas fa-moon"></i></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" role="main">
+        <div class="container hero-content">
+            <h1>راهنمای جامع آزمون TOLC@Home 2025</h1>
+            <p>همه چیز درباره آزمون TOLC@Home: از ثبت‌نام و اجرای آزمون در VMware Horizon تا نکات ضروری و آپدیت‌های جدید سال 2025 برای موفقیت شما.</p>
+            <a href="#about" class="btn" aria-label="شروع مطالعه راهنما">
+                <i class="fas fa-rocket"></i>
+                شروع کنید
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">درباره آزمون TOLC@Home</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>معرفی آزمون</h3>
+                <p>آزمون TOLC@Home نسخه آنلاین آزمون TOLC است که توسط CISIA برای ارزیابی متقاضیان تحصیل در دانشگاه‌های ایتالیا طراحی شده و از خانه با نظارت آنلاین برگزار می‌شود.</p>
+                <a href="https://www.cisiaonline.it/en/tolc/all-about-TOLC/what-is-the-TOLC" class="btn" target="_blank" aria-label="اطلاعات بیشتر درباره TOLC">
+                    <i class="fas fa-info-circle"></i>
+                    اطلاعات بیشتر
+                </a>
+            </div>
+            <div class="info-card">
+                <h3>انواع آزمون TOLC</h3>
+                <p>انواع مختلف آزمون TOLC شامل:</p>
+                <ul>
+                    <li>TOLC-I: مهندسی</li>
+                    <li>TOLC-E: اقتصاد و علوم اجتماعی</li>
+                    <li>TOLC-F: داروسازی و شیمی</li>
+                    <li>TOLC-S: علوم پایه</li>
+                    <li>TOLC-MED: پزشکی و دندانپزشکی</li>
+                </ul>
+                <a href="https://www.cisiaonline.it/en/tolc/all-about-TOLC/test-types" class="btn" target="_blank" aria-label="مشاهده انواع آزمون TOLC">
+                    <i class="fas fa-list"></i>
+                    مشاهده جزئیات
+                </a>
+            </div>
+            <div class="info-card">
+                <h3>نحوه ثبت‌نام</h3>
+                <p>مراحل ثبت‌نام:</p>
+                <ol>
+                    <li>ایجاد حساب در <a href="https://testcisia.it/studenti_tolc/login_sso.php" target="_blank">سایت CISIA</a></li>
+                    <li>انتخاب نوع آزمون و تاریخ از <a href="https://testcisia.it/calendario.php" target="_blank">تقویم آزمون</a></li>
+                    <li>پرداخت ۳۵ یورو (کارت اعتباری یا MAV)</li>
+                    <li>دریافت تأییدیه و اطلاعات ورود</li>
+                </ol>
+                <a href="https://www.cisiaonline.it/en/tolc/all-about-TOLC/registration" class="btn" target="_blank" aria-label="شروع ثبت‌نام در آزمون TOLC">
+                    <i class="fas fa-user-plus"></i>
+                    شروع ثبت‌نام
+                </a>
+            </div>
+            <div class="info-card">
+                <h3>مزایای TOLC@Home</h3>
+                <p>انعطاف‌پذیری، امکان شرکت از هر مکان، و اعتبار نتایج برای پذیرش در دانشگاه‌های ایتالیا.</p>
+                <a href="https://www.cisiaonline.it/en/tolc/all-about-TOLC/why-tolc" class="btn" target="_blank" aria-label="چرا TOLC@Home">
+                    <i class="fas fa-star"></i>
+                    چرا TOLC@Home؟
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="structure" class="exam-structure">
+        <div class="container">
+            <h2 class="section-title">ساختار و محتوای آزمون</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3>بخش‌های اصلی</h3>
+                    <p>بخش‌های آزمون بسته به نوع آن:</p>
+                    <ul>
+                        <li><strong>ریاضیات</strong>: حل مسئله و منطق</li>
+                        <li><strong>علوم</strong>: شیمی، فیزیک، زیست</li>
+                        <li><strong>درک مطلب</strong>: تحلیل متون</li>
+                        <li><strong>منطق</strong>: استدلال منطقی</li>
+                        <li><strong>زبان انگلیسی</strong>: مهارت‌های زبان (در برخی آزمون‌ها)</li>
+                    </ul>
+                    <a href="#faq" class="btn" aria-label="مشاهده سوالات متداول">
+                        <i class="fas fa-question-circle"></i>
+                        سوالات متداول
+                    </a>
+                </div>
+                <div class="info-card">
+                    <h3>مدت زمان و سوالات</h3>
+                    <p>ساختار آزمون:</p>
+                    <ul>
+                        <li>TOLC-I: 50 سوال، 110 دقیقه</li>
+                        <li>TOLC-E: 36 سوال، 90 دقیقه + 30 دقیقه انگلیسی</li>
+                        <li>TOLC-F: 50 سوال، 72 دقیقه</li>
+                        <li>TOLC-S: 80 سوال، 123 دقیقه</li>
+                        <li>TOLC-MED: 78 سوال، 100 دقیقه</li>
+                    </ul>
+                    <p>نمره‌دهی: صحیح ۱ امتیاز، غلط ۰٫۲۵-، بی‌پاسخ ۰.</p>
+                    <a href="https://www.cisiaonline.it/en/tolc/all-about-TOLC/test-structure" class="btn" target="_blank" aria-label="جزئیات ساختار آزمون">
+                        <i class="fas fa-clock"></i>
+                        جزئیات بیشتر
+                    </a>
+                </div>
+                <div class="info-card">
+                    <h3>نمونه سوالات</h3>
+                    <p>برای آمادگی، از نمونه سوالات رسمی و آزمون‌های شبیه‌سازی استفاده کنید.</p>
+                    <a href="https://www.cisiaonline.it/en/tolc/practice-area" class="btn" target="_blank" aria-label="دانلود نمونه سوالات TOLC">
+                        <i class="fas fa-book"></i>
+                        دانلود نمونه سوالات
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vmware" class="important-notes">
+        <div class="container">
+            <h2 class="section-title">نحوه اجرا در VMware Horizon</h2>
+            <div class="note-cards">
+                <div class="note-card">
+                    <h4>الزامات فنی</h4>
+                    <p>نیازمندی‌ها:</p>
+                    <ul>
+                        <li>رایانه با ویندوز 10/11 یا macOS Ventura/Sonoma</li>
+                        <li>حداقل ۸ گیگابایت RAM (توصیه‌شده: 16 گیگابایت)</li>
+                        <li>اتصال اینترنت پایدار (حداقل 10Mbps)</li>
+                        <li>وب‌کم و میکروفون با کیفیت</li>
+                        <li>دستگاه دوم برای نظارت Zoom</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>نصب VMware Horizon</h4>
+                    <p>مراحل نصب (از جولای ۲۰۲۴):</p>
+                    <ol>
+                        <li>دانلود VMware Horizon Client از <a href="https://www.vmware.com/products/horizon.html" target="_blank">سایت VMware</a></li>
+                        <li>نصب نرم‌افزار حداقل 48 ساعت قبل</li>
+                        <li>اتصال به سرور آزمون با حساب CISIA</li>
+                        <li>نصب Zoom روی دستگاه دوم</li>
+                        <li>تست سیستم و اینترنت</li>
+                    </ol>
+                    <a href="https://www.cisiaonline.it/news/horizon-e-lapp-il-tolccasa" class="btn" target="_blank" aria-label="راهنمای رسمی VMware Horizon">
+                        <i class="fas fa-tools"></i>
+                        راهنمای رسمی
+                    </a>
+                </div>
+                <div class="note-card">
+                    <h4>نکات فنی</h4>
+                    <ul>
+                        <li>استفاده از مرورگر به‌روز (Chrome/Firefox)</li>
+                        <li>غیرفعال کردن موقت فایروال/آنتی‌ویروس</li>
+                        <li>اتصال اترنت برای پایداری</li>
+                        <li>تست وب‌کم و میکروفون</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>محیط آزمون</h4>
+                    <p>شرایط محیط:</p>
+                    <ul>
+                        <li>اتاق آرام با نور کافی</li>
+                        <li>عدم حضور افراد دیگر</li>
+                        <li>ممنوعیت وسایل غیرمجاز (ماشین‌حساب، ساعت هوشمند)</li>
+                        <li>نمایش اتاق به ناظر از طریق Zoom</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="updates" class="container">
+        <h2 class="section-title">آپدیت‌های 2025</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>تغییرات کلیدی</h3>
+                <ul>
+                    <li>اجرای آزمون در VMware Horizon</li>
+                    <li>پشتیبانی از macOS Ventura/Sonoma</li>
+                    <li>نظارت با هوش مصنوعی</li>
+                    <li>رابط کاربری بهبودیافته</li>
+                    <li>پایداری سرورها</li>
+                </ul>
+                <a href="https://www.cisiaonline.it/en/news" class="btn" target="_blank" aria-label="جزئیات آپدیت‌های 2025">
+                    <i class="fas fa-sync"></i>
+                    جزئیات آپدیت‌ها
+                </a>
+            </div>
+            <div class="info-card">
+                <h3>ویژگی‌های جدید</h3>
+                <p>ذخیره پاسخ‌ها، بازگشت به سوالات، پروتکل‌های امنیتی پیشرفته، و آزمون‌های تمرینی رایگان.</p>
+                <a href="https://www.cisiaonline.it/en/tolc/practice-area" class="btn" target="_blank" aria-label="آزمون‌های تمرینی رایگان">
+                    <i class="fas fa-book"></i>
+                    آزمون‌های تمرینی
+                </a>
+            </div>
+            <div class="info-card">
+                <h3>به‌روزرسانی‌های فنی</h3>
+                <p>سازگاری با VMware Horizon و ویندوز 11، عملکرد بهتر در سیستم‌های ضعیف.</p>
+                <a href="#vmware" class="btn" aria-label="راهنمای فنی VMware">
+                    <i class="fas fa-cog"></i>
+                    راهنمای فنی
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="tips" class="important-notes">
+        <div class="container">
+            <h2 class="section-title">نکات آمادگی و موفقیت</h2>
+            <div class="note-cards">
+                <div class="note-card">
+                    <h4>قبل از آزمون</h4>
+                    <ul>
+                        <li>تست سیستم و اینترنت ۴۸ ساعت قبل</li>
+                        <li>شارژ کامل لپ‌تاپ یا اتصال به برق</li>
+                        <li>آماده‌سازی مدارک شناسایی</li>
+                        <li>محیط آرام با نور مناسب</li>
+                        <li>تمرین با نمونه سوالات <a href="https://www.cisiaonline.it/en/tolc/practice-area" target="_blank">CISIA</a></li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>حین آزمون</h4>
+                    <ul>
+                        <li>اجتناب از برنامه‌های غیرضروری</li>
+                        <li>حفظ اتصال اینترنت پایدار</li>
+                        <li>مدیریت زمان هر بخش</li>
+                        <li>تماس با پشتیبانی در صورت مشکل (<a href="mailto:support@cisia.it">support@cisia.it</a>)</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>استراتژی‌های موفقیت</h4>
+                    <ul>
+                        <li>پاسخ به سوالات ساده‌تر اول</li>
+                        <li>مدیریت استرس با تنفس عمیق</li>
+                        <li>خواب کافی</li>
+                        <li>یادداشت فرمول‌های کلیدی</li>
+                        <li>تسلط به انگلیسی برای آزمون‌های مربوطه</li>
+                    </ul>
+                </div>
+                <div class="note-card">
+                    <h4>منابع آمادگی</h4>
+                    <ul>
+                        <li>نمونه سوالات رسمی CISIA</li>
+                        <li>کتاب‌های آمادگی (مانند Alpha Test)</li>
+                        <li>دوره‌های آنلاین معتبر</li>
+                        <li>تمرین مدیریت زمان</li>
+                    </ul>
+                    <a href="https://www.cisiaonline.it/en/tolc/practice-area" class="btn" target="_blank" aria-label="منابع رسمی آمادگی">
+                        <i class="fas fa-book"></i>
+                        منابع رسمی
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">سوالات متداول</h2>
+            <div class="faq-item" aria-expanded="false">
+                <h4>آزمون TOLC@Home چیست؟</h4>
+                <div class="answer">نسخه آنلاین آزمون TOLC با نظارت از طریق Zoom و VMware Horizon.</div>
+            </div>
+            <div class="faq-item" aria-expanded="false">
+                <h4>هزینه ثبت‌نام چقدر است?</h4>
+                <div class="answer">۳۵ یورو، قابل پرداخت با کارت اعتباری یا MAV.</div>
+            </div>
+            <div class="faq-item" aria-expanded="false">
+                <h4>در صورت قطع اینترنت چه کنم؟</h4>
+                <div class="answer">VMware Horizon پاسخ‌ها را ذخیره می‌کند. با پشتیبانی تماس بگیرید: <a href="mailto:support@cisia.it">support@cisia.it</a>.</div>
+            </div>
+            <div class="faq-item" aria-expanded="false">
+                <h4>آیا مدرک زبان لازم است؟</h4>
+                <div class="answer">خیر، اما تسلط به انگلیسی برای آزمون‌های انگلیسی‌زبان ضروری است.</div>
+            </div>
+            <div class="faq-item" aria-expanded="false">
+                <h4>نتایج کی اعلام می‌شود؟</h4>
+                <div class="answer">۴۸ ساعت پس از آزمون (ساعت ۱۹:۰-۰ به وقت ایتالیا) در حساب CISIA.</div>
+            </div>
+            <div class="faq-item" aria-expanded="false">
+                <h4>چگونه VMware Horizon را نصب کنم؟</h4>
+                <div class="answer">دانلود از <a href="https://www.vmware.com/products/horizon.html" target="_blank">سایت VMware</a> و تست ۴۸ ساعت قبل.</div>
+            </div>
+        </div>
+    </section>
+
+    <button class="back-to-top" aria-label="بازگشت به بالا"><i class="fas fa-chevron-up"></i></button>
+
+
+    <script>
+        // نوار اسکرول
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            const progressBar = document.querySelector('.progress-bar');
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            progressBar.style.width = scrolled + '%';
+
+            if (winScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            const backToTop = document.querySelector('.back-to-top');
+            if (winScroll > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // تغییر تم
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            body.setAttribute('data-theme', currentTheme);
+            themeToggle.querySelector('i').classList.toggle('fa-moon');
+            themeToggle.querySelector('i').classList.toggle('fa-sun');
+        });
+
+        // FAQ آکاردئون
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => {
+                    i.classList.remove('active');
+                    i.setAttribute('aria-expanded', 'false');
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                    item.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+
+        // بازگشت به بالا
+        document.querySelector('.back-to-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // انیمیشن اسکرول
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0) scale(1)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.info-card, .note-card, .faq-item, .section-title').forEach((el, index) => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px) scale(0.95)';
+            el.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1) ${index * 0.1}s';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
